@@ -24,7 +24,7 @@ from jsmin import jsmin
 from multiprocessing.pool import ThreadPool
 
 
-CNAME = 'pulsesolution.github.io'
+CNAME = ''
 
 
 def build_content(output='output'):
@@ -105,6 +105,8 @@ class BuildManager():
                 file.write(output.encode('utf-8'))
 
     def make_cname(self, cname=CNAME):
+        if not cname:
+            return
         with open(os.path.join(self.output, 'CNAME'), 'w') as file:
             file.write(cname)
 
