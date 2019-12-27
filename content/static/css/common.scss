@@ -1,0 +1,313 @@
+/*
+author: Taehong Kim
+email: peppy0510@hotmail.com
+*/
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    // clear: both;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+       -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 20px 15px 20px 15px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+    // max-width: 1200px;
+    display: flex;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #606060;
+    .container {
+        margin: auto;
+        h2 {
+            color: #FFFFFF;
+            // margin: auto;
+        }
+    }
+
+    // align-items: center;
+}
+
+// .tag-header,
+// .tags-header,
+// .index-header,
+// .authors-header,
+// .archives-header,
+// .category-header,
+// .categories-header,
+// .article-header {
+//     width: 100%;
+//     margin: 50px 0 0 0;
+//     background-color: #202020;
+//     display: flex;
+//     .container {
+//         margin-top: auto;
+//         margin-bottom: auto;
+//         display: flex;
+//         flex-direction: column;
+//         height: 100%;
+//         padding-top: 30px;
+//         padding-bottom: 30px;
+//         .header-title {
+//             color: #FFFFFF;
+//             font-size: 14pt;
+//             line-height: 22pt;
+//             font-weight: bold;
+//             margin: auto auto 0 0;
+//             padding-bottom: 4px;
+//         }
+//         .article-meta {
+//             // margin: 4px auto auto 0;
+//             .seperator {
+//                 color: #FFFFFF;
+//                 font-size: 10pt;
+//                 vertical-align: top;
+//                 padding: 1px 6px 0 2px;
+//             }
+//             a {
+//                 color: #FFFFFF;
+//                 font-size: 11pt;
+//                 text-decoration: none;
+//             }
+//             time {
+//                 font-size: 11pt;
+//                 color: #FFFFFF;
+//                 // font-family: 'Consolas', Monaco, monospace;
+//             }
+//         }
+//         .article-tags {
+//             display: flex;
+//             margin-top: 12px;
+//             margin-left: -3px;
+//             a {
+//                 font-size: 9pt;
+//                 line-height: 9pt;
+//                 color: #B0B0B0;
+//                 border-radius: 6px;
+//                 text-decoration: none;
+//                 border: 1px solid #404040;
+//                 padding: 5px 10px 5px 10px;
+//                 background-color: #282828;
+//                 &:hover {
+//                     background-color: #303030;
+//                 }
+//                 &:active {
+//                     background-color: #383838;
+//                 }
+//                 &:not(:first-child) {
+//                     margin-left: 6px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .index-header {
+//     height: 0;
+// }
+
+// .article-header {
+//     .container {
+//         padding-top: 30px;
+//         padding-bottom: 30px;
+//     }
+// }
+
+// .tag-header,
+// .tags-header,
+// .archives-header,
+// .categories-header,
+// .category-header {
+//     // min-height: 120px;
+// }
+
+// .tags-header,
+// .archives-header,
+// .categories-header {
+//     .container {
+//         display: flex;
+//         .header-title {
+//             // text-align: left;
+//             // margin-right: auto;
+//             // border-radius: 8px;
+//             // background-color: #303030;
+//             // padding: 4px 14px 4px 14px;
+//             // -webkit-box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.5);
+//             //    -moz-box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.5);
+//             //         box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.5);
+//         }
+//     }
+// }
+
+// .tags-body,
+// .categories-body,
+// .archives-body {
+//     .container {
+//         padding-top: 30px;
+//         padding-bottom: 20px;
+//         .article {
+//             display: flex;
+//             padding-top: 20px;
+//             padding-bottom: 20px;
+//             border-bottom: 1px solid #E8E8E8;
+//             margin-right: auto;
+//             // &:not(:first-child) {
+//             //     border-top: 1px solid #E8E8E8;    
+//             // }
+//             // &:last-child {
+//             //     border-bottom: 1px solid #E8E8E8;    
+//             // }
+//             // min-height: 32px;
+//             display: flex;
+//             // border-radius: 4px;
+//             // padding: 3px 12px;
+//             text-decoration: none;
+//             &:first-child {
+//                 border-top: 1px solid #E8E8E8;
+//             }
+//             // background-color: #808080;
+//             &:hover {
+//                 // background-color: #909090;
+//             }
+//             .title {
+//                 padding-right: 20px;
+//                 a {
+//                     color: #404040;
+//                     margin: auto;
+//                     font-size: 14pt;
+//                     line-height: 22pt;
+//                     // line-height: 16pt;
+//                     padding: 2px 0;
+//                     font-weight: bold;
+//                     text-decoration: none;
+//                 }
+//             }
+
+//             .count,
+//             .datetime {
+//                 height: 20px;
+//                 display: flex;
+//                 min-width: 30px;
+//                 border-radius: 8px;
+//                 // margin: auto 0 auto 8px;
+//                 margin: auto 0 auto auto;
+//                 padding: 2px 7px 2px 7px;
+//                 background-color: #A0A0A0;
+//                 text-align: center;
+//                 label {
+//                     white-space: nowrap;
+//                     color: #FFFFFF;
+//                     font-weight: bold;
+//                     margin: auto;
+//                     font-size: 9pt;
+//                     line-height: 9pt;
+//                 }
+//             }
+//             .datetime {
+//                 min-width: 78px;
+//                 padding: 2px 6px 2px 6px;
+//             }
+//         }
+//     }
+// }
+
+// .tags-body,
+// .categories-body,
+// .archives-body {
+//     .container {
+//         padding-bottom: 19px;
+//         padding-bottom: 11px;
+//     }
+//     .article {
+//         display: flex;
+//         margin-top: 10px;
+//         margin-bottom: 10px;
+//         a {
+//             min-height: 32px;
+//             display: flex;
+//             color: #FFFFFF;
+//             border-radius: 4px;
+//             padding: 3px 12px;
+//             text-decoration: none;
+//             background-color: #808080;
+//             &:hover {
+//                 background-color: #909090;
+//             }
+//             .title {
+//                 color: #FFFFFF;
+//                 font-weight: normal;
+//                 margin: auto;
+//                 font-size: 11pt;
+//                 line-height: 16pt;
+//                 padding: 2px 0;
+//             }
+//             .count,
+//             .datetime {
+//                 height: 16px;
+//                 display: flex;
+//                 min-width: 24px;
+//                 border-radius: 6px;
+//                 margin: auto 0 auto 8px;
+//                 padding: 1px 7px 1px 6px;
+//                 background-color: #C0C0C0;
+//                 label {
+//                     white-space: nowrap;
+//                     color: #707070;
+//                     font-weight: bold;
+//                     margin: auto;
+//                     font-size: 9pt;
+//                     line-height: 9pt;
+//                 }
+//             }
+//             .datetime {
+//                 min-width: 70px;
+//                 padding: 1px 5px 1px 4px;
+//             }
+//         }
+//     }
+// }
+
+// .index-body {
+//     // padding-top: 20px;
+//     .container {
+//         padding-top: 30px;
+//         // padding-top: 0;
+//     }
+// }
+
+// .category-body {
+//     .container {
+//         padding-top: 30px;
+//         // padding-top: 0;
+//     }
+// }
